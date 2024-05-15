@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"content="Projeto Integrador PJI1-São Carlos-SP Turma Engenharia deComputação 2022">
+        <title>Formulário de Identificação de Danos em Superfície Asfáltica</title>
+        <link rel="stylesheet" href="style.css">
+
+        </head>
+    <body>
+         <nav class="logo">
+        <a href="index.html">
+            <img src="CustomLoginLogo.png">
+
+        </a>
+        
+         <ul>
+            <li><a href="#">PROJETO INTEGRADOR</a></li>
+
+
+         </ul>
+
+        </nav>
+        
+        
+
+
+        <div>
+         <h1 id="titulo">Formulário de Identificação de Dados em Superfície Asfáltica
+        </h1>
+            <p id="subtitulo">Esta página foi criada para demonstrar graficamente o software com framework desenvolvido pelo Grupo 009 - Polo São Carlos-DRP09-Sala1 para disciplina PJI (Projeto Integrador em Computação I) </p>
+            <br>
+         </div>
+
+        <div>
+        <form action="cadastro.php" method ="POST">
+        <form>
+            <fieldset class="grupo">
+
+            <h2 id="cabecalho"> <strong>Dados do Solicitante</strong></h2>
+
+             
+            
+                <div class="campo">
+                <label for="nome"><strong>Nome Completo</strong></label>
+                <label>
+                <input type="text" name="nome" id="nome" required>
+                </label>
+                <label for="contato"><strong>Contato:Celular/Fixo</strong></label>
+                <label>
+                <input type="text"name="contato" id="contato" required>
+                </label>
+                <label for="email"><strong>E-mail</strong></label>
+                <label>
+                <input type="email"name="email" id="email" required>
+                </label>
+                <label for="cidade_uf"><strong>Cidade/UF</strong></label>
+                <label>
+                <input type="text"name="cidade" id="cidade"required>
+                </label>
+
+            </fieldset>
+        
+               
+    </div>
+
+    <div>
+        
+        <h2 id="cabeçalho"><strong>Informações do Local onde o Problema foi Identificado</strong></h2>
+         
+            
+        <div class="campo">
+        <p id="paragrafo">Informe o local exato do buraco e/ou dano que têm o asfalto</p>
+
+        <label for="endereço_completo"><strong>Endereço Completo</strong></label>
+        <label>
+        <input type="text" name="endereco" id="endereco" required>
+        </Label>
+        
+        <label for="ponto_de_refrencia"><strong>Ponto de Referência</strong></label>
+        <p id="paragrafo">Informe um local ou  referência para agilizar a localização do buraco no asfalto </p>
+        <label>
+        <input type="text"name="referencia" id="referencia" required>
+        </label>
+
+    
+        
+    </div>
+    
+    <div class="campo">
+        <br>
+        <label for="Informações Adicionais"><strong>Informações Adicionais sobre o Problema: </strong></label>
+        
+        <textarea rows="6" style="width: 26em" id="informacoes" name="informacoes"></textarea>
+        
+    
+        <div>
+                
+            <button class="botao" type="submit" onsubmit="">Enviar</button>
+    
+        
+</div>
+    
+    
+    </fieldset>
+
+    </form>
+    <footer>
+    </footer>
+    
+</body>
+
+</html>
